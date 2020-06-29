@@ -1,0 +1,130 @@
+    @import url('https://fonts.googleapis.com/css2?family=Aleo:ital@1&family=Kalam:wght@300;400;700&family=Poppins&family=Roboto+Slab:wght@500;600;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    .outside {
+        border-left: 3px rgb(255, 208, 0) solid;
+        border-right: 3px rgb(255, 208, 0) solid;
+        border-bottom: 3px rgb(12, 12, 12) solid;
+        background-color: rgb(12, 12, 12);
+        padding: 0px 27px 27px 27px;
+        min-width: 975px;
+    }
+    
+    h1.heading {
+        text-align: center;
+        color: white;
+        padding: 8px;
+        font-size: 50px;
+        font-family: 'Roboto Slab', serif;
+        background: -webkit-linear-gradient(0deg, #10bd3b, #ffc118);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        min-width: 975px;
+    }
+    
+    .container {
+        width: 90%;
+        padding: 2px;
+        max-width: 1100px;
+        margin: 40px auto;
+        transform: skew(3deg, 2deg);
+        background: linear-gradient(350deg, #ea3406, #64f504);
+        box-shadow: 10px 11px 18px 5px rgba(234, 52, 6, 0.3);
+    }
+    
+    div.box {
+        background-color: rgb(245, 248, 245);
+        transform: skew(-3deg, -2deg);
+        padding: 40px 20px;
+        border: 1px rgb(255, 208, 0) solid;
+    }
+    
+    .details {
+        max-width: 70%;
+        display: inline-block;
+        padding: 40px 25px;
+        background-color: rgb(202, 240, 159);
+        border: 1px rgb(0, 255, 13) solid;
+    }
+    
+    h2.sirname {
+        font-family: 'Roboto Slab', serif;
+        background: -webkit-linear-gradient(0deg, #fa2f20, #e4d60f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        padding: 5px 0px;
+    }
+    
+    h3.headline {
+        font-size: 20px;
+        font-family: 'Kalam', cursive;
+    }
+    
+    p.about {
+        font-family: 'Aleo', serif;
+    }
+    
+    div.photo {
+        display: inline-block;
+        padding: 10px;
+    }
+    
+    div.photo-container {
+        display: block;
+        padding: 4px;
+        background: linear-gradient(30deg, #fa2f20, #b20fe4);
+    }
+    
+    img.sir {
+        display: block;
+        height: 200px;
+        width: 160px;
+    }
+    
+    a.name {
+        display: block;
+        padding: 10px 3px;
+        text-align: center;
+        font-family: 'Kalam', cursive;
+        font-size: 20px;
+    }
+    
+    table.tab {
+        display: inline-block;
+        padding: 4px;
+        border-spacing: 4px;
+    }
+    
+    th {
+        font-family: 'Poppins', sans-serif;
+        text-align: right;
+        color: rgb(119, 0, 255);
+    }
+    
+    td {
+        display: inline;
+        margin: 0px 50px;
+        text-align: left;
+        font-family: 'Aleo', serif;
+    }
+    /*------------------| CONTAINER COLOUR |-----------------------*/
+    
+    .container:nth-child(1) {
+        background: linear-gradient(350deg, #ea8f06, #e20849);
+        box-shadow: 10px 11px 18px 5px rgba(234, 143, 6, 0.3);
+    }
+    
+    .container:nth-child(2) {
+        background: linear-gradient(350deg, #ea8f06, #e20849);
+        box-shadow: 10px 11px 18px 5px rgba(234, 143, 6, 0.3);
+    }
+    
+    .container:nth-child(3) {
+        background: linear-gradient(350deg, #08e2d7, #7006e9);
+        box-shadow: 10px 11px 18px 5px rgba(8, 226, 215, 0.3)
+    }

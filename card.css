@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section.sec1 {
+    background-color: #17131d;
+    padding: 4em 3em;
+    width: 100%;
+    min-width: 880px;
+}
+
+div#box {
+    max-width: 1260px;
+    margin: auto;
+}
+
+@media (max-width:1250px) {
+    div#box {
+        max-width: 835px;
+        margin: auto;
+    }
+}
+
+@media (max-width:945px) {
+    div#box {
+        max-width: 420px;
+        margin: auto;
+    }
+}
+
+div.container {
+    min-width: 310px;
+    max-width: 400px;
+    display: inline-block;
+    padding: 2px;
+    transform: skew(2deg, 2deg);
+    margin: .45em.45em;
+    min-height: 393px;
+}
+
+span.trans {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    background-color: #ffffff;
+    opacity: .05;
+}
+
+div.card {
+    position: relative;
+    background-color: #1c092b;
+    min-height: 380px;
+    margin-top: 5px;
+    position: relative;
+    transform: skew(-2deg, -2deg);
+}
+
+.card h2 {
+    position: absolute;
+    top: 58px;
+    right: 16px;
+    font-size: 10em;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(225, 225, 225, 0.05);
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.card h3 {
+    padding-top: 6em;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #0fbcd4;
+    margin-left: 1.3em;
+}
+
+.card p {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    text-align: justify;
+    margin: 0 1.6em;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #00ff00;
+    border: #ffff00 1px solid;
+    padding: 10px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    margin-left: 1.5em;
+}
+
+.card a:hover {
+    background-color: #ffff00;
+    color: #000000;
+}
+
+.container:hover .card a {
+    transform: translateY(20px);
+    opacity: 1;
+}
+
+.container:hover .card h2 {
+    top: -20px;
+    right: 16px;
+    opacity: 1;
+}
+
+
+/*------------------ colour gradient border ---------------------*/
+
+div.container:nth-child(1) {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+    box-shadow: 8px 9px 15px 5px rgba(255, 0, 87, 0.2);
+}
+
+div.container:nth-child(2) {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+    box-shadow: 8px 9px 15px 5px rgba(137, 255, 0, 0.2);
+}
+
+div.container:nth-child(3) {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+    box-shadow: 8px 9px 15px 5px rgba(255, 0, 0, 0.2);
+}
+
+
+/*-----------------------end here------------------------------*/
