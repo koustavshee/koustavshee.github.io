@@ -220,15 +220,15 @@ table {
 }
 
 .card {
-    position: relative;
+    
     padding: 1rem;
+    
 }
 
 .box {
     position: relative;
     height: 24rem;
-    min-width: 10rem;
-    max-width: 20rem;
+    width: 20rem;
     padding: 1rem;
     background-color: #1c092b;
     margin: 1rem;
@@ -336,4 +336,12 @@ p {
 .box:nth-child(6)::before {
     background: linear-gradient(315deg, #89ff00, #00bcd4);
     box-shadow: 8px 9px 15px 5px rgb(137, 255, 0, 0.3);
+}
+
+.swiper-container {
+    width: 95%;
+    height: 30rem;
+}
+.swiper-wrapper {
+    width: 70rem;
 }
