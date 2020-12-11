@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Nerko+One&family=Roboto+Slab:wght@300&family=Russo+One&family=Poppins:wght@200;300&family=Crete+Round&display=swap"');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Nerko+One&family=Roboto+Slab:wght@300&family=Russo+One&family=Poppins:wght@200;300;500&family=Crete+Round&display=swap"');
+* {
+    margin: auto;
+}
+
 body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(12, 12, 12);
+    background-color: #0c0c0c;
     max-width: 1920px;
     min-width: 940px;
 }
@@ -198,13 +202,11 @@ table {
 /*========================= card box =========================*/
 
 .sec4 {
-    background-color: rgb(37, 33, 33);
+    background-color: #252121;
     margin: 1rem 0rem;
     padding: 2rem;
     box-shadow: rgb(12, 12, 12) 0px 0px 14px 2px inset;
 }
-
-
 
 .sec5 {
     margin: 1rem 0rem;
@@ -220,9 +222,7 @@ table {
 }
 
 .card {
-    
     padding: 1rem;
-    
 }
 
 .box {
@@ -342,6 +342,153 @@ p {
     width: 95%;
     height: 30rem;
 }
+
 .swiper-wrapper {
     width: 70rem;
+}
+
+
+/*======================================|FOR CAMPUSSING |======================================*/
+
+.company {
+    background-color: #252121;
+    padding: 2rem 3rem;
+}
+
+hr {
+    border-top: 1px solid rgb(68, 66, 66);
+    width: 90%;
+    margin: auto;
+}
+
+.c-in {
+    margin: auto;
+    padding: 40px 20px;
+    height: 420px;
+}
+
+.sec-cv {
+    padding: 40px;
+}
+
+.c-logo {
+    width: 300px;
+    height: 300px;
+}
+
+.cv-out {
+    display: block;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    padding: 4em 2em;
+    box-sizing: border-box;
+    border: 20px;
+    border-radius: 1em;
+    background-color: #0c0c0c;
+}
+
+.cv-out::before {
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(to right, red, orange);
+}
+
+.btn-cv {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Poppins', SansSerif;
+    font-weight: 300;
+    color: rgb(69, 209, 26);
+    display: inline-block;
+    margin: 1rem 0rem auto;
+    border-radius: 10px;
+    border: 3px solid #c76911;
+    width: 50%;
+    text-align: center;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.cv-out:hover .btn-cv {
+    visibility: visible;
+    right: 0.5rem;
+}
+
+.cv-out:hover .btn-cv:hover {
+    color: #0c0c0c;
+    font-weight: 500;
+    border: none;
+    padding: 3px;
+    background: linear-gradient(to right, red, orange);
+    transition: 0s;
+}
+
+.cv-font {
+    position: absolute;
+    color: #fff;
+    opacity: 0.1;
+    right: 1rem;
+    top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15rem;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.cv-title {
+    margin: auto;
+    font-family: 'Roboto', SansSerif;
+    display: block;
+    font-size: 32px;
+}
+
+.cv-int {
+    display: block;
+    justify-content: center;
+    text-align: justify;
+}
+
+.report {
+    background: url(./digitalart-1607680589140-775.jpg);
+    height: 400px;
+}
+
+.rpt-crd {
+    height: 300px;
+    width: 300px;
+    border: 8px solid transparent;
+    margin: .5rem;
+    border-radius: 3rem;
+    z-index: 1;
+    padding: 1rem;
+    background: rgb(255, 255, 255, 0.2);
+    background-clip: padding-box;
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 3px rgb(255, 255, 255, 0.2);
+}
+
+.rpt-crd-head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    text-decoration: none;
+    color: rgb(0, 119, 255);
+    font-weight: 400;
+    text-align: right;
+    letter-spacing: 4px;
+}
+
+.rpt-yr {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    text-decoration: none;
+    color: orange;
+    font-weight: 300;
 }
