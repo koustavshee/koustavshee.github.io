@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--================================| Icon |==========================================-->
-    <link rel="shotcut icon" type="img/png" href=" ./TitleImg.png ">
+    <link rel="shotcut icon" type="img/png" href="./assets/Image/TitleImg.png ">
 
     <title>DEE |APCRP</title>
 
     <!--===================| StyleSheet link for NAV-BAR & FOOTER |=======================-->
 
-    <link rel="stylesheet" type="text/css" href="./basic_NAV_footer.css">
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/basic_NAV_footer.css">
 
     <!--===================| StyleSheet link for NAV-BAR & FOOTER |=======================-->
 
-    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/index.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- ================================| External |=====================================-->
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/CSS/slick.css" />
+    <link rel="stylesheet" href="./assets/CSS/slick-theme.css" />
+
 </head>
 
 <body>
@@ -28,14 +32,14 @@
 
     <nav class=" nav-bar stdm">
         <div class="dept ">
-            <img src="./DEE_logo.png " alt="Dept-logo " class="dept-logo ">
+            <img src="./assets/Image/DEE_logo.png " alt="Dept-logo " class="dept-logo ">
             <div class="name ">
                 <a href="index.html " class="dept-nm ">DEE</a><br> <a href="http://www.apcraypolytechnic.in/" class="clg-nm ">|APCRP</a>
             </div>
         </div>
         <ul class="nav-item ">
             <li>
-                <a class="option active" href="#">DEE</a>
+                <a class="option active" href="index.html">DEE</a>
             </li>
             <li>
                 <a class="option" href="study_material.html" target="_blank">
@@ -54,7 +58,7 @@
                 </a>
             </li>
             <li>
-                <a class="option " href="campussing.html">
+                <a class="option " href="">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -74,7 +78,7 @@
                 </a>
             </li>
             <li>
-                <a class="option " href="test.html">
+                <a class="option " href="">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -82,7 +86,7 @@
                 </a>
             </li>
             <li>
-                <img src="dp.jpg" class="log-ph">
+                <img src="./assets/Image/dp.jpg" class="log-ph">
             </li>
         </ul>
     </nav>
@@ -105,41 +109,40 @@
     <section class="sec3">
         <div class=" slider ">
             <div class="slides ">
-                <!--radio buttons start-->
                 <input type="radio" name="radio-btn " id="radio1">
                 <input type="radio" name="radio-btn " id="radio2">
                 <input type="radio" name="radio-btn " id="radio3">
                 <input type="radio" name="radio-btn " id="radio4">
-                <!--radio buttons end-->
-                <!--slide images start-->
+                <input type="radio" name="radio-btn " id="radio5">
                 <div class="slide first ">
-                    <img src="clg1.jpg " alt=" ">
+                    <img src="./assets/Image/clg_1.jpg " alt=" ">
                 </div>
                 <div class="slide ">
-                    <img src="clg2.jpg " alt=" ">
+                    <img src="./assets/Image/clg_2.jpg" alt=" ">
                 </div>
                 <div class="slide ">
-                    <img src="clg3.jpg " alt=" ">
+                    <img src="./assets/Image/clg_3.jpg" alt=" ">
                 </div>
                 <div class="slide ">
-                    <img src="clg4.jpg " alt=" ">
+                    <img src="./assets/Image/clg_4.jpg" alt=" ">
                 </div>
-                <!--slide images end-->
-                <!--automatic navigation start-->
+                <div class="slide ">
+                    <img src="./assets/Image/clg_5.jpg" alt=" ">
+                </div>
                 <div class="navigation-auto ">
                     <div class="auto-btn1 "></div>
                     <div class="auto-btn2 "></div>
                     <div class="auto-btn3 "></div>
                     <div class="auto-btn4 "></div>
+                    <div class="auto-btn5 "></div>
                 </div>
-                <!--automatic navigation end-->
             </div>
-            <!--manual navigation start-->
             <div class="navigation-manual ">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
                 <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
             </div>
         </div>
     </section>
@@ -162,200 +165,223 @@
     <section class="sec4">
         <h2 class="head">EVENTS & BLOGS</h2>
         <div class="swiper-container" style="margin:auto;">
-            <div class="card swiper-wrapper">
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">COLLEGE</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">FEST</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#">Read More</a>
+            <div class="card carousel">
+                <div>
+                    <div class="box ">
+                        <div class="pic ">
+                            <h2 class="flt ">COLLEGE</h2>
+                            <img src="./assets/Image/clg_1.jpg " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">BIBEK</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">PRITAM</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#"> Read More </a>
+                <div>
+                    <div class="box_1 ">
+                        <div class="pic ">
+                            <h2 class="flt ">KOUSTAV</h2>
+                            <img src="./assets/Image/clg_1.jpg " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">DEBJIT</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#"> Read More </a>
-                    </div>
-                </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">PIJUSH</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#"> Read More </a>
+                <div>
+                    <div class="box_2 ">
+                        <div class="pic ">
+                            <h2 class="flt ">BIBEK</h2>
+                            <img src="./assets/Image/clg_1.jpg " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div>
+                    <div class="box_3 ">
+                        <div class="pic ">
+                            <h2 class="flt ">SOUMYAJIT</h2>
+                            <img src="./assets/Image/clg_1.jpg " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box_4 ">
+                        <div class="pic ">
+                            <h2 class="flt ">INDIRA</h2>
+                            <img src="./assets/Image/clg_1.jpg " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box_5 ">
+                        <div class="pic ">
+                            <h2 class="flt ">PIJUSH</h2>
+                            <img src="./assets/Image/clg_1.jpg  " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!--======================================| CARD [section 5] |===================================-->
-
+    <hr>
     <section class="sec5 ">
         <h2 class="head">DISCOVER</h2>
         <div class="swiper-container" style="margin:auto;">
-            <div class="card swiper-wrapper">
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">KOUSTAV</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#"> Read More </a>
-                    </div>
-                </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">SOUMYAJIT</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#"> Read More </a>
+            <div class="card carousel">
+                <div>
+                    <div class="box_3 ">
+                        <div class="pic ">
+                            <h2 class="flt ">COLLEGE</h2>
+                            <img src="./assets/Image/clg_1.jpg " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">SAMUDRA</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#"> Read More </a>
-                    </div>
-                </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">indira</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#"> Read More </a>
+                <div>
+                    <div class="box_5 ">
+                        <div class="pic ">
+                            <h2 class="flt ">JAYANTA</h2>
+                            <img src="./assets/Image/clg_1.jpg  " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">LAB</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#"> Read More </a>
-                    </div>
-                </div>
-                <div class="box ">
-                    <div class="pic ">
-                        <h2 class="flt ">LAB</h2>
-                        <img src="clg1.jpg " alt="# " class="short ">
-                    </div>
-                    <div class="cont ">
-                        <h3>Machine Lab4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
-                        <a class="button" href="#"> Read More </a>
+                <div>
+                    <div class="box ">
+                        <div class="pic ">
+                            <h2 class="flt ">DEBJIT</h2>
+                            <img src="./assets/Image/clg_1.jpg " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div>
+                    <div class="box_4 ">
+                        <div class="pic ">
+                            <h2 class="flt ">SUPRIYA</h2>
+                            <img src="./assets/Image/clg_1.jpg " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box_1 ">
+                        <div class="pic ">
+                            <h2 class="flt ">SAMUDRA</h2>
+                            <img src="./assets/Image/clg_1.jpg " alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box ">
+                        <div class="pic ">
+                            <h2 class="flt ">COLLEGE</h2>
+                            <img src="./assets/Image/clg_1.jpg" alt="# " class="short ">
+                        </div>
+                        <div class="cont ">
+                            <h3>Machine Lab1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ab?</p>
+                            <a class="button" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+    <hr>
+    <!--==================================| Anti-Ragging Greviance |=================================-->
+    <section class="anti_ragg">
+        <div class="ragg_box">
+            <h2 class="ragg_hdn">Anti-Ragging Graviance</h2>
+            <form class="ragg">
+                <div class="cs">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Full Name">
+                        <input type="text" name="reg_no" id="reg_no" placeholder="Registration No.">
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="emailid" placeholder="Email">
+                        <input type="number" name="phone" id="phone" placeholder="Contact No">
+                    </div>
+                </div>
+                <div>
+                    <textarea type="textarea" name="message" id="message" placeholder="Message"></textarea>
+                </div>
 
+            </form>
+            <button type="submit" class="btn-ls send">SEND</button>
+        </div>
+    </section>
     <!--===========================================| Footer |========================================-->
 
     <footer class=" footer stdm ">
         <div class="footer-row ">
-            <div class="footer-col-25 "><span class="text_footer ">designed by KS-prime 😜</span> </div>
+            <div class="footer-col-25 "><span class="text_footer ">designed by GROUP-4</span> </div>
             <div class="footer-col-75 ">
                 <span class="text_footer ">Follow us</span>
                 <div>
-                    <a href="# " target="_blank " class="footer-icon "> <img src="./facebook.png " style="width :40px; height:40px "></a>
-                    <a href="# " target="_blank " class="footer-icon "> <img src="./mega.png " style="width :40px; height:40px "></a>
+                    <a href="# " target="_blank " class="footer-icon "> <img src="./assets/Image/facebook.png" style="width :40px; height:40px "></a>
+                    <a href="# " target="_blank " class="footer-icon "> <img src="./assets/Image/mega.png " style="width :40px; height:40px "></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <!--======================================| javascript link |====================================-->
-    <script type="text/javascript " src="index.js "></script>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript " src="./assets/js/index.js"></script>
+    <script type="text/javascript " src="./assets/js/main.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            slidesPerGroup: 2,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <script src="./assets/js/slick.min.js"></script>
+
 </body>
 
 </html>

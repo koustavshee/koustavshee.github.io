@@ -1,12 +1,8 @@
 var counter = 1;
-sliderPhoto();
-
-function sliderPhoto() {
+setInterval(function() {
     document.getElementById('radio' + counter).checked = true;
     counter++;
-    if (counter > 4) {
+    if (counter > 5) {
         counter = 1;
     }
-}
-setInterval(sliderPhoto, 5000);
-
+}, 5000);

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&family=Orbitron:wght@900&display=swap');
+
+/*{
+    color: #222831;
+    color: #393e46;
+    color: #fd7014;
+    color: #eeeeee;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.log {
+    position: fixed;
+    margin: auto;
+    margin-top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222831;
+}
+
+.log_box {
+    position: relative;
+    margin: 15vh auto;
+    display: block;
+    padding: 1.25rem;
+    width: 30vw;
+    height: 60vh;
+    background-color: #222831;
+}
+
+.log_box::before {
+    content: '';
+    position: absolute;
+    top: -0.25rem;
+    right: 0;
+    bottom: -0.25rem;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(251, 255, 0));
+}
+
+.hdn {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #7ae94e;
+}
+
+form {
+    margin-top: 6rem;
+}
+
+.reg {
+    margin-top: 3rem;
+}
+
+input {
+    display: block;
+    margin: auto;
+    background-color: #222831;
+}
+
+#emailid,
+#password,
+#name,
+#phone {
+    border: #fd7014 2px solid;
+    width: 99%;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #eeeeee;
+    text-align: center;
+    box-shadow: rgb(253, 112, 20, 0.3) 4px 3px 6px;
+}
+
+.fgt {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    color: #eeeeee;
+}
+
+.btn-ls {
+    display: inline-block;
+    margin: 4rem 0.75rem;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #eeeeee;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgb(2, 158, 2);
+    box-shadow: rgba(20, 253, 20, 0.3) 2px 1px 12px;
+}
+
+.signup {
+    background-color: rgb(3, 117, 161);
+    box-shadow: rgb(3, 117, 161, 0.3) 2px 1px 12px;
+}
+
+.reg-bt {
+    margin: 1.5rem 0.75rem;
+}

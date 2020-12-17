@@ -83,6 +83,11 @@ a.option:not(.disable):hover {
     transition-delay: 0.2s;
 }
 
+.log-ph {
+    width: 2rem;
+    border-radius: 1rem;
+}
+
 
 /*------------------this is for button animation--------------------*/
 
@@ -144,11 +149,6 @@ a:hover span:nth-child(4) {
     bottom: 100%;
     transition: .2s;
     transition-delay: 0.05s;
-}
-
-.log-ph {
-    width: 2rem;
-    border-radius: 1rem;
 }
 
 
